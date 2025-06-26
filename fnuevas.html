@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="./js/javascript.js" defer></script>
+    <title>Nuevas | PStore</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg text-white p-3"
+      style="background-color: #0abab5"
+    >
+      <div class="container-fluid">
+        <a href="./inicio.html">
+          <img
+            src="./img/logops.png"
+            class="img-fluid"
+            alt="logops"
+            style="max-height: 100px"
+        /></a>
+        <a class="navbar-brand ms-4" href="./inicio.html" aria-current="page"
+          >Pulga Store</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./fnuevas.html"
+                    >Figuras nuevas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./fusadas.html"
+                    >Figuras usadas</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="container d-flex flex-column max-auto rounded-4 w-25"
+        style="background-color: #0abab5"
+      >
+        <p id="horaH" class="fs-1 fw-bold text-center lh-1 mb-1"></p>
+        <p id="fechaH" class="fs-5 text-center lh-1 mb-1"></p>
+        <p id="mesAnio" class="fs-5 text-center lh-1 mb-1"></p>
+      </div>
+    </nav>
+    <div class="container-sm mt-5">
+      <p class="fs-1 text-center fw-bold">Figuras nuevas</p>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100 text-center position-relative">
+            <div class="img-container position-relative">
+              <img
+                src="img/figura1.jpeg"
+                class="card-img-top zoom-hover"
+                alt="figura1"
+              />
+              <div class="heart-overlay">
+                <i
+                  class="bi bi-suit-heart-fill"
+                  onclick="mostrarFavorito()"
+                ></i>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">General Royal Gray</h5>
+              <p class="card-text text-success">$15.990</p>
+              <button class="btnComprar btn btn-primary mx-auto">
+                <i class="bi bi-cart-fill"></i> Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center position-relative">
+            <div class="img-container position-relative">
+              <img
+                src="img/figura2.jpeg"
+                class="card-img-top zoom-hover"
+                alt="figura2"
+              />
+              <div class="heart-overlay">
+                <i
+                  class="bi bi-suit-heart-fill"
+                  onclick="mostrarFavorito()"
+                ></i>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Coletta</h5>
+              <p class="card-text text-success">$13.990</p>
+              <button class="btnComprar btn btn-primary mx-auto">
+                <i class="bi bi-cart-fill"></i> Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center position-relative">
+            <div class="img-container position-relative">
+              <img
+                src="img/figura3.jpeg"
+                class="card-img-top zoom-hover"
+                alt="figura3"
+              />
+              <div class="heart-overlay">
+                <i
+                  class="bi bi-suit-heart-fill"
+                  onclick="mostrarFavorito()"
+                ></i>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Fisturia, el dragón de agua</h5>
+              <p class="card-text text-success">$29.990</p>
+              <button class="btnComprar btn btn-primary mx-auto">
+                <i class="bi bi-cart-fill"></i> Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center position-relative">
+            <div class="img-container position-relative">
+              <img
+                src="img/figura4.jpeg"
+                class="card-img-top zoom-hover"
+                alt="figura4"
+              />
+              <div class="heart-overlay">
+                <i
+                  class="bi bi-suit-heart-fill"
+                  onclick="mostrarFavorito()"
+                ></i>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Justiciero oscuro</h5>
+              <p class="card-text text-success">$19.990</p>
+              <button class="btnComprar btn btn-primary mx-auto">
+                <i class="bi bi-cart-fill"></i> Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center position-relative">
+            <div class="img-container position-relative">
+              <img
+                src="img/figura5.jpeg"
+                class="card-img-top zoom-hover"
+                alt="figura5"
+              />
+              <div class="heart-overlay">
+                <i
+                  class="bi bi-suit-heart-fill"
+                  onclick="mostrarFavorito()"
+                ></i>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Mimi</h5>
+              <p class="card-text text-success">$12.990</p>
+              <button class="btnComprar btn btn-primary mx-auto">
+                <i class="bi bi-cart-fill"></i> Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="w-100 my-5"></div>
+
+    <footer
+      class="footer text-white text-center py-3"
+      style="background-color: #135d66"
+    >
+      <p class="mb-0">&copy; 2025 Pulga Store</p>
+      <p class="text-white">
+        <a
+          href="preguntasFrecuentes.html"
+          class="text-white text-decoration-none"
+          >Preguntas frecuentes</a
+        >
+      </p>
+    </footer>
+
+    <!-- Modal de favoritos -->
+    <div id="modalFavorito" class="fade-modal">
+      Se ha agregado a tus favoritos
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="miModal"
+      tabindex="-1"
+      aria-labelledby="miModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="miModalLabel">¡Buena elección!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">El producto se ha agregado al carrito.</div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              <i class="bi bi-bag-heart-fill"></i> Continuar comprando
+            </button>
+            <button type="button" class="btn btn-primary">
+              Ir al carrito <i class="bi bi-cart-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
